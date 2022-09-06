@@ -24,29 +24,21 @@ function App() {
 					/>
 				</Col>
 				<Col width={1 / 5}>
+					<MovieCard title="ET" details="USA, 120 min" image={poster} />
+				</Col>
+				<Col width={1 / 5}>
 					<MovieCard
-						title="Flash Gordon"
+						title="Jurassic Park"
 						details="USA, 120 min"
 						image={poster}
 					/>
 				</Col>
 				<Col width={1 / 5}>
-					<MovieCard
-						title="Flash Gordon"
-						details="USA, 120 min"
-						image={poster}
-					/>
+					<MovieCard title="Jaws" details="USA, 120 min" image={poster} />
 				</Col>
 				<Col width={1 / 5}>
 					<MovieCard
-						title="Flash Gordon"
-						details="USA, 120 min"
-						image={poster}
-					/>
-				</Col>
-				<Col width={1 / 5}>
-					<MovieCard
-						title="Flash Gordon"
+						title="Chaos in Seattle"
 						details="USA, 120 min"
 						image={poster}
 					/>

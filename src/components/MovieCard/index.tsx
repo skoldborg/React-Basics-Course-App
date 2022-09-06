@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import Rating from "../Rating"
+
 interface MovieCardProps {
 	image: string
 	title: string
@@ -36,16 +38,18 @@ const MovieCardTitle = styled.h2`
 const MovieCardDetails = styled.p`
 	font-size: 12px;
 	line-height: 20px;
+	margin-bottom: 20px;
 `
 
 const MovieCard = (props: MovieCardProps) => {
 	return (
 		<MovieCardStyled>
 			<MovieCardImage>
-				<img src={props.image} alt={props.title}></img>
+				<img src={props.image} alt={props.title} />
 			</MovieCardImage>
 			<MovieCardTitle>{props.title}</MovieCardTitle>
 			<MovieCardDetails>{props.details}</MovieCardDetails>
+			<Rating name={`${props.title}-rating`} />
 		</MovieCardStyled>
 	)
 }

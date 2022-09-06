@@ -42,7 +42,7 @@ const MovieCard = (props: MovieCardProps) => {
 	return (
 		<MovieCardStyled>
 			<MovieCardImage>
-				<img src={props.image} alt={props.title}></img>
+				<img src={props.image} alt={props.title} />
 			</MovieCardImage>
 			<MovieCardTitle>{props.title}</MovieCardTitle>
 			<MovieCardDetails>{props.details}</MovieCardDetails>

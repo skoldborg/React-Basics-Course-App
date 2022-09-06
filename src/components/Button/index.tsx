@@ -1,6 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
+interface ButtonProps {
+	children?: React.ReactNode
+}
+
 const ButtonStyled = styled.button`
 	background-color: var(--yellow);
 	border: 2px solid var(--black);
@@ -17,11 +21,7 @@ const ButtonStyled = styled.button`
 	}
 `
 
-interface ButtonProps {
-	children?: React.ReactNode
-}
-
-const Button: React.FC<ButtonProps> = (props) => {
+const Button = (props: ButtonProps) => {
 	return <ButtonStyled>{props.children}</ButtonStyled>
 }
 

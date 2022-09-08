@@ -7,7 +7,8 @@ interface ColProps {
 }
 
 const ColStyled = styled.div<Pick<ColProps, "width">>`
-	width: ${(props) => (props.width ? props.width * 100 : "100")}%;
+	width: ${(props) =>
+		props.width ? `calc((${props.width * 100}%) - 16px)` : "100%"};
 `
 
 const Col = (props: ColProps) => {

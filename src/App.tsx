@@ -1,8 +1,6 @@
 import React from "react"
-import Button from "./components/Button"
 import MovieCard from "./components/MovieCard"
-import Row from "./components/Row"
-import Col from "./components/Col"
+import Grid from "./components/Grid"
 import poster from "./assets/posters/flash-gordon.jpeg"
 import styled from "styled-components"
 
@@ -15,35 +13,21 @@ const Wrapper = styled.div`
 function App() {
 	return (
 		<Wrapper>
-			<Row gridGap="16px" rowGap="32px" columnCount={5}>
-				<Col>
-					<MovieCard
-						title="Flash Gordon"
-						details="USA, 120 min"
-						image={poster}
-					/>
-				</Col>
-				<Col>
-					<MovieCard title="ET" details="USA, 120 min" image={poster} />
-				</Col>
-				<Col>
-					<MovieCard
-						title="Jurassic Park"
-						details="USA, 120 min"
-						image={poster}
-					/>
-				</Col>
-				<Col>
-					<MovieCard title="Jaws" details="USA, 120 min" image={poster} />
-				</Col>
-				<Col>
-					<MovieCard
-						title="Chaos in Seattle"
-						details="USA, 120 min"
-						image={poster}
-					/>
-				</Col>
-			</Row>
+			<Grid gridGap="16px" rowGap="32px" columnCount={5}>
+				<MovieCard title="Flash Gordon" details="USA, 120 min" image={poster} />
+				<MovieCard title="ET" details="USA, 120 min" image={poster} />
+				<MovieCard
+					title="Jurassic Park"
+					details="USA, 120 min"
+					image={poster}
+				/>
+				<MovieCard title="Jaws" details="USA, 120 min" image={poster} />
+				<MovieCard
+					title="Chaos in Seattle"
+					details="USA, 120 min"
+					image={poster}
+				/>
+			</Grid>
 		</Wrapper>
 	)
 }

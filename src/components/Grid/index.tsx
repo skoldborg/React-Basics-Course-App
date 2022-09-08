@@ -1,15 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 
-interface RowProps {
+interface GridProps {
 	children?: React.ReactNode
 	columnCount?: number
 	gridGap?: string
 	rowGap?: string
 }
 
-const RowStyled = styled.div<
-	Pick<RowProps, "columnCount" | "gridGap" | "rowGap">
+const GridStyled = styled.div<
+	Pick<GridProps, "columnCount" | "gridGap" | "rowGap">
 >`
 	display: grid;
 	grid-template-columns: repeat(${(props) => props.columnCount ?? 5}, 1fr);
@@ -17,8 +17,8 @@ const RowStyled = styled.div<
 	row-gap: ${(props) => props.rowGap ?? 0};
 `
 
-const Row = ({ children, ...rest }: RowProps) => {
-	return <RowStyled {...rest}>{children}</RowStyled>
+const Grid = ({ children, ...rest }: GridProps) => {
+	return <GridStyled {...rest}>{children}</GridStyled>
 }
 
-export default Row
+export default Grid

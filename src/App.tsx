@@ -15,28 +15,28 @@ const Wrapper = styled.div`
 function App() {
 	return (
 		<Wrapper>
-			<Row gridGap="16px" rowGap="32px">
-				<Col width={1 / 5}>
+			<Row gridGap="16px" rowGap="32px" columnCount={5}>
+				<Col>
 					<MovieCard
 						title="Flash Gordon"
 						details="USA, 120 min"
 						image={poster}
 					/>
 				</Col>
-				<Col width={1 / 5}>
+				<Col>
 					<MovieCard title="ET" details="USA, 120 min" image={poster} />
 				</Col>
-				<Col width={1 / 5}>
+				<Col>
 					<MovieCard
 						title="Jurassic Park"
 						details="USA, 120 min"
 						image={poster}
 					/>
 				</Col>
-				<Col width={1 / 5}>
+				<Col>
 					<MovieCard title="Jaws" details="USA, 120 min" image={poster} />
 				</Col>
-				<Col width={1 / 5}>
+				<Col>
 					<MovieCard
 						title="Chaos in Seattle"
 						details="USA, 120 min"

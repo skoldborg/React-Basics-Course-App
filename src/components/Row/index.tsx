@@ -9,6 +9,7 @@ interface RowProps {
 
 const RowStyled = styled.div<Pick<RowProps, "gridGap" | "rowGap">>`
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	grid-gap: ${(props) => props.gridGap ?? 0};
 	row-gap: ${(props) => props.rowGap ?? 0};

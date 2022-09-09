@@ -16,6 +16,7 @@ const MovieCardImage = styled.div`
 	position: relative;
 	height: 100%;
 	margin-bottom: 16px;
+	box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 	img {
 		position: absolute;

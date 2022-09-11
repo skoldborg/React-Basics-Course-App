@@ -24,5 +24,5 @@ $ npm run build
 
 ## Notes
 
-App install through Create React App. [Learn more](https://facebook.github.io/create-react-app/docs/getting-started).
+App driven by Create React App. [Learn more](https://facebook.github.io/create-react-app/docs/getting-started).
 

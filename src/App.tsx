@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 function App() {
 	return (
 		<Wrapper>
-			<Grid gridGap="16px" rowGap="32px" columnCount={5}>
+			<Grid columnGap="16px" rowGap="32px" columnCount={5}>
 				<MovieCard title="Flash Gordon" details="USA, 120 min" image={poster} />
 				<MovieCard title="Flash Gordon" details="USA, 120 min" image={poster} />
 				<MovieCard title="Flash Gordon" details="USA, 120 min" image={poster} />

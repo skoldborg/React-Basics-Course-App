@@ -5,7 +5,7 @@ interface ButtonProps {
 	children?: React.ReactNode
 }
 
-const ButtonStyled = styled.button`
+const ButtonStyled = styled.a`
 	background-color: var(--yellow);
 	border: 2px solid var(--black);
 	border-radius: 100px;
